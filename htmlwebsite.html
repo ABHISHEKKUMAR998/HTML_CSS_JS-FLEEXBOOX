@@ -1,0 +1,175 @@
+<!doctype html>
+<title>Food Corner</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        min-height: 50vh;
+        flex-direction: row;
+        margin: 0;
+    }
+    
+    .outer-col-1 {
+        background: blue;
+        flex: 1;
+        background-image: url(images/menu.jpg);
+    }
+    
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 30px;
+        padding: 35px;
+        width: 200px;
+        background-color: #26ebf1;
+    }
+    
+    li a {
+        display: block;
+        color: #000;
+        padding: 50px 30px 80px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: violet;
+        color: white;
+    }
+    
+    .outer-col-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+    }
+    
+    .inner-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .inner-col {
+        flex: 4;
+    }
+    
+    .inner-row article {
+        min-height: 60vh;
+    }
+    
+    .aside-col {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        color: #000;
+        height: auto;
+    }
+    
+    img {
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 550px;
+        height: 350px;
+        box-shadow: 10px 10px 5px green;
+    }
+    
+    .inner-row aside {
+        background: burlywood;
+        flex: 1;
+        padding: 30px;
+    }
+    
+    header {
+        background-image: url(images/chick.jpg);
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        width: 1600px;
+        height: 100px;
+        background-size: cover;
+        padding: 1px;
+    }
+    
+    .header-head {
+        text-shadow: 2px 2px 5px rgb(223, 47, 47);
+        color: black;
+    }
+    
+    header,
+    footer {
+        padding: 1em;
+        height: 20vh;
+        color: white;
+        background-color: blueviolet;
+    }
+    
+    article,
+    nav {
+        padding: 1em;
+        color: rgb(0, 0, 0);
+    }
+    
+    aside {
+        padding: 1em;
+        color: black;
+        height: 1300px;
+    }
+</style>
+
+<body>
+    <nav class="outer-col-1">
+
+        <ul>
+
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Food">Food</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="outer-col-2">
+        <header>
+            <h1 class="header-head">
+
+                <center>!Chicken ADDA!</center>
+            </h1>
+        </header>
+        <div class="inner-row">
+            <div class="inner-col">
+                <article>
+                    <h1><u>Biryani Corner</u></h1>
+                    <h3>Biryani for evey moments either your birthday party or annivarsary.</h3>
+                    <h3>1. Haderabadi Biryani
+                        <h3>
+                            <img src="images/chicken.jpg" alt="pancake">
+                            <p>Hyderabadi biryani, also known as Hyderabadi dum biryani, is a style of biryani from Hyderabad, India made with basmati rice and goat meat and cooked with the dum pukht method. Originating in the kitchens of the Nizam of Hyderabad,
+                                it combines elements of Hyderabadi and Mughlai cuisines.</p>
+                            <h3>2. Muradabaad Biryani
+                                <h3>
+                                    <img src="images/chick.jpg" alt="upma">
+                                    <p>When it comes to Biryani, everyone has their palates set and no matter what kind of new style you bring on, the biryani enthusiasts will not budge about their favourite type. That’s when Muradabadi Chicken Biryani enters
+                                        the scene and unites all the Biryani lovers with a delicious amalgamation of spices that steals hearts away. Prepared using basmati rice, chicken, lemon juice, onions, green chillies, ginger, and spices like hing,
+                                        cardamom, cloves, jeera, garam masala powder, cumin powder and the likes.</p>
+
+                </article>
+                <footer>
+                    <center>Feedback / About Us / Contact Us </center>
+                </footer>
+            </div>
+            <aside class="aside-col">
+                <img src="images/fry.jpg" alt="pan">
+                <h1><u>OUR BEST DISHES</u></h1>
+                <ul>
+                    <li>Grilled Chicken</li>
+                    <li>Steam Masla Chicken</li>
+                    <li>Chicken Korma</li>
+                    <li>Mughlai Chicken</li>
+                    <li>Chicken Lolipop</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
